@@ -102,6 +102,7 @@ button:hover, button:focus{
 
 @media (min-width: 760px){
     main{
+        width: 100%;
         max-width: 550px;
         max-height: 550px;
         border: 1px solid;
@@ -135,6 +136,11 @@ button:hover, button:focus{
         display: flex;
         align-items: end;
         height: 460px;
+    }
+        body{
+        display: flex;
+        min-height: 100vh; 
+        margin: 0;
     }
 
 }
