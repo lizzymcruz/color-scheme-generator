@@ -7,6 +7,23 @@
     <title>Color Scheme Generator</title>
 </head>
 <body>
+    <header></header>
+    <main>
+        <form id="colorpicker-form">
+            <input type="color" id="selectColor" name="selectColor">
+            <select id="selectScheme">
+                <option value="monochrome">Monochrome</option>
+                <option value="monochrome-dark">Monochrome-dark</option>
+                <option value="monochrome-light">Monochrome-light</option>
+                <option value="analogic">Analogic</option>
+                <option value="complement">complement</option>
+                <option value="analogic-complement">Analogic-Complement</option>
+                <option value="triad">Triad</option>
+                <option value="quad">Quad</option>
+            </select>
+            <button type="submit" id="getcolorscheme-btn">Get Color Scheme</button>
+        </form>    
+    </main>
 <script src="index.js"></script>
 </body>
 </html>
