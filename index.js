@@ -1,5 +1,5 @@
 const getSchemeBtn =  document.getElementById("colorpicker-form")
-
+const showColors = document.getElementById('show-colors-container')
 
 getSchemeBtn.addEventListener('submit', function(e){
     e.preventDefault()
