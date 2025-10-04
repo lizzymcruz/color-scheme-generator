@@ -2,10 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!--viewport-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <!--favicon-->
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/color/48/color-palette.png" alt="color-palette">
+    <!--stylesheet-->
     <link rel="stylesheet" href="index.css">
     <title>Color Scheme Generator</title>
 </head>
@@ -14,7 +19,9 @@
     <main>
         <form id="colorpicker-form">
             <div class="color-input">
+                <!--color picker-->
                 <input type="color" id="select-color" name="select-color">
+                <!--scheme picker-->
                 <select id="select-scheme">
                     <option value="monochrome">Monochrome</option>
                     <option value="monochrome-dark">Monochrome-Dark</option>
@@ -28,6 +35,7 @@
             </div>
             <button type="submit" id="getcolorscheme-btn">Get Color Scheme</button>
         </form>
+            <!--show color scheme-->
             <div id="show-colors-container">
             </div>
     </main>
