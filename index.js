@@ -2,7 +2,7 @@ const colorPickerForm =  document.getElementById("colorpicker-form")
 const showColors = document.getElementById('show-colors-container')
 
 function getAndRenderColors(hex, mode){
-    fetch(`https://www.thecolorapi.com/scheme?hex=${color}&mode=${scheme}&count=5`)
+    fetch(`https://www.thecolorapi.com/scheme?hex=${hex}&mode=${mode}&count=5`)
         .then(res => res.json())
         .then(data => {
             showColors.innerHTML = ""
