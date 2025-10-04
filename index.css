@@ -96,6 +96,11 @@ button:hover, button:focus{
     cursor: pointer;  
 }
 
+#show-colors-container div:last-child{
+    height: 100%;
+    min-height: 320px;
+}
+
 #show-colors-container div p{
     height: 45px;
     background-color: white;
@@ -168,6 +173,12 @@ button:hover, button:focus{
         align-items: end;
         height: 460px;
     }
+
+    #show-colors-container div:last-child{
+        height: 100%;
+        min-height: 460px;
+    }
+
     #show-colors-container div p{
         width: 100%;
         padding: .7em 0;
