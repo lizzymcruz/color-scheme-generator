@@ -16,9 +16,12 @@ getSchemeBtn.addEventListener('submit', function(e){
             data.colors.forEach(color => {
                 const colorDiv = document.createElement('div')
                 colorDiv.style.backgroundColor = color.hex.value
-                colorDiv.style.height = "100px"
-                colorDiv.style.width = "100px"
                 showColors.appendChild(colorDiv)
-        })    
-    }) 
+                const hexCode = document.createElement('p')
+                hexCode.textContent = color.hex.value
+                colorDiv.appendChild(hexCode)
+        })
+                                  
+    })
+     
 })
