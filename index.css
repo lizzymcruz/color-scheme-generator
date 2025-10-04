@@ -11,6 +11,7 @@ body {
 
 main{
     margin: auto;
+    background-color: white;
 }
 
 form{
@@ -83,7 +84,7 @@ button:hover, button:focus{
     display: flex;
     flex-direction: column;
     height: 100%;
-    
+    overflow: hidden;
 }
 
 #show-colors-container div{
@@ -91,6 +92,8 @@ button:hover, button:focus{
     height: 100px;
     padding: 0;
     margin: 0;
+    position: relative;
+    cursor: pointer;  
 }
 
 #show-colors-container div p{
@@ -101,6 +104,25 @@ button:hover, button:focus{
     padding: .7em 0;
     margin: 0;
     border-bottom-right-radius: 5px;
+    
+}
+
+.tooltip{
+    display: block;
+    align-self: auto;
+    position: absolute;
+    padding: 0.5em 1em;
+    border-radius: 6px;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.tooltip.show{
+    opacity: 1;
 }
 
 @media (min-width: 760px){
@@ -113,7 +135,9 @@ button:hover, button:focus{
         width: 100%;
         max-width: 550px;
         max-height: 550px;
-        border: 1px solid;   
+        border-radius: 6px;
+        border: 1px solid #D1D5DB;
+        box-shadow: 0 1px 1px 0 #D1D5DB;
     }
     #select-color{
         max-width: 61px;

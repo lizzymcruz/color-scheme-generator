@@ -15,7 +15,34 @@ function getAndRenderColors(hex, mode){
                 hexCode.textContent = color.hex.value
                 colorDiv.appendChild(hexCode)
 
-                showColors.appendChild(colorDiv)
+                showColors.appendChild(colorDiv)  
+
+                const copyToolTip = document.createElement('span')
+                copyToolTip.textContent = "Copied!"
+                copyToolTip.classList.add('tooltip')
+                colorDiv.appendChild(copyToolTip)
+
+                colorDiv.addEventListener('click', function(){
+                    navigator.clipboard.writeText(color.hex.value)
+                        .then(() => {
+                            copyToolTip.classList.add('show')
+                            setTimeout(() => {
+                                copyToolTip.classList.remove('show')
+                            }, 1000)
+                        })
+                })
+
+                hexCode.addEventListener('click', function(){
+                    navigator.clipboard.writeText(color.hex.value)
+                        .then(() => {
+                            copyToolTip.classList.add('show')
+                            setTimeout(() => {
+                                copyToolTip.classList.remove('show')
+                            }, 1000)
+                        })
+                })
+
+                document.body.style.backgroundColor = color.hex.value
         })
                                   
     })
