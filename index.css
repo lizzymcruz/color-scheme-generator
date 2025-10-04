@@ -104,7 +104,11 @@ button:hover, button:focus{
 }
 
 @media (min-width: 760px){
-    
+    body{
+        display: flex;
+        min-height: 100vh; 
+        margin: 0;
+    }
     main{
         width: 100%;
         max-width: 550px;
@@ -140,10 +144,9 @@ button:hover, button:focus{
         align-items: end;
         height: 460px;
     }
-    body{
-        display: flex;
-        min-height: 100vh; 
-        margin: 0;
+    #show-colors-container div p{
+        width: 100%;
+        padding: .7em 0;
+        border-radius: 0;
     }
-
 }
