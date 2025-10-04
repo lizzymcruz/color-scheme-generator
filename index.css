@@ -94,10 +94,13 @@ button:hover, button:focus{
 }
 
 #show-colors-container div p{
-    height: 46px;
+    height: 45px;
     background-color: white;
     text-align: center;
-    width: 100%;
+    width: 100px;
+    padding: .7em 0;
+    margin: 0;
+    border-bottom-right-radius: 5px;
 }
 
 @media (min-width: 760px){
@@ -110,7 +113,7 @@ button:hover, button:focus{
         width: 100%;
         max-width: 550px;
         max-height: 550px;
-        border: 1px solid;
+        border: 1px solid;   
     }
     #select-color{
         max-width: 61px;
@@ -126,7 +129,6 @@ button:hover, button:focus{
     }
     .color-input{
         width: 70%;
-        border: 1px solid;
     }
     form{      
         flex-wrap: nowrap;
