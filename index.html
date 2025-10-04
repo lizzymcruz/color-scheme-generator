@@ -10,8 +10,8 @@
     <header></header>
     <main>
         <form id="colorpicker-form">
-            <input type="color" id="selectColor" name="selectColor">
-            <select id="selectScheme">
+            <input type="color" id="select-color" name="select-color">
+            <select id="select-scheme">
                 <option value="monochrome">Monochrome</option>
                 <option value="monochrome-dark">Monochrome-dark</option>
                 <option value="monochrome-light">Monochrome-light</option>
@@ -22,7 +22,11 @@
                 <option value="quad">Quad</option>
             </select>
             <button type="submit" id="getcolorscheme-btn">Get Color Scheme</button>
-        </form>    
+        </form>
+        <div id="show-colors">
+            <div id="show-colors-container">
+            </div>
+        </div>    
     </main>
 <script src="index.js"></script>
 </body>
