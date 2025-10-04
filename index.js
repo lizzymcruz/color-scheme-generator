@@ -23,7 +23,7 @@ function getAndRenderColors(hex, mode){
 
 getAndRenderColors("000000", "monochrome")
 
-getSchemeBtn.addEventListener('submit', function(e){
+colorPickerForm.addEventListener('submit', function(e){
     e.preventDefault()
 
     const color = document.getElementById('select-color').value.slice(1)
